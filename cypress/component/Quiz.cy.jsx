@@ -12,7 +12,7 @@ describe('Quiz Component', () => {
       }
       ).as('getRandomQuestion')
     });
-
+// Mock the API response for the quiz questions
   it('should start the quiz and display the first question', () => {
     cy.mount(<Quiz />);
     cy.get('button').contains('Start Quiz').click();
